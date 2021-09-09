@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="main.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="wrapp">
+        <h1 class="display-2">Expence tracker</h1>
+        <h3>Add a New Item</h3>
+
+        <form role="form">
+            <p>Name:<input id="name" type="text"></p> <Br>
+            <p>Date:<input id="date" type="text"></p> <Br>
+            <p>Amount:<input id="amount" type="text"></p><Br>
+        </form>
+        <button class="btn btn-success">Add Expanse</button>
+
+    </div>
+   
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Name</th>
+                <th scope="col">Date</th>
+                <th scope="col">Price</th>
+                <th scope="col">Amount</th>
+                <th scope="col" id="total">Total</th>
+
+            </tr>
+        </thead>
+
+
+    </table>
+
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>
