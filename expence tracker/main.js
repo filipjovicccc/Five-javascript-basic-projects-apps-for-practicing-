@@ -1,5 +1,3 @@
-// let addExpanse = document.querySelector(".btn-success");
-
 let Name = document.getElementById("name")
 
 let date = document.getElementById("date")
@@ -13,23 +11,6 @@ let bb = document.createElement("button")
 let table = document.querySelector("table")
 
 
-// addExpanse.addEventListener("click", function (event) {
-
-//   table.innerHTML += `  <tbody>
-//     <tr>
-//       <th scope="row">1</th>
-//       <td>${Name.value}</td>
-//       <td>${date.value}</td>
-//       <td id="special">${amount.value} </td>
-
-//       <td><button onclick="this.parentElement.parentElement.innerHTML = '';"
-//       "></button></td>
-//       </tr>
-//     </tbody>
-//      `
-
-
-// })
 if (document.readyState == "loading") {
 
   document.addEventListener("DOMContentLoaded", init)
@@ -86,9 +67,7 @@ function special() {
   }
 
 
-  // for (let i = 0; i < special.length; i++){
-
-  // }
+ 
 }
 
 
