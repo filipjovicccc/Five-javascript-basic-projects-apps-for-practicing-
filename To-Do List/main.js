@@ -19,8 +19,6 @@ buT.addEventListener("click", function () {
     if (inp.value) {
         inp.value = ""
     }
-
-
 });
 
 

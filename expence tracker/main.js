@@ -24,7 +24,6 @@ function init() {
 
   addExpanse.addEventListener("click", addArticle)
 
-
 }
 
 function addArticle(event) {
@@ -62,12 +61,8 @@ function special() {
     let total = parseFloat(first) + parseFloat(first);
     console.log(total)
 
+}
 
-
-  }
-
-
- 
 }
 
 
