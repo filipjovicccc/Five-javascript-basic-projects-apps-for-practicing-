@@ -1,42 +1,42 @@
 
 
-// function init() {
+function init() {
 
-//     let btn = document.querySelector(".btn-success")
+    let btn = document.querySelector(".btn-success")
 
-//     btn.addEventListener("click", addArticle)
-// }
+    btn.addEventListener("click", addArticle)
+}
 
-// init()
+init()
 
-// let btn = document.querySelector(".btn-success")
+let btn = document.querySelector(".btn-success")
 
-// function addArticle(event) {
-//     let btn = event.target
+function addArticle(event) {
+    let btn = event.target
 
-//     let stu = document.getElementById("name")
+    let stu = document.getElementById("name")
 
-//     let nmu = (stu.value)
+    let nmu = (stu.value)
 
-//     myString = nmu.replace(/^(.{25}[^\s]*).*/, "$1")
+    myString = nmu.replace(/^(.{25}[^\s]*).*/, "$1")
 
-//     let section = document.querySelector(".section");
+    let section = document.querySelector(".section");
 
-//     section.innerHTML += `
+    section.innerHTML += `
 
-//     <div class="small-div">
-//     <h4>Note:<h4>
-//      <p>${myString}</p>
-//  <button type="button" class="btn btn-primary">View Full note</button>
-//      </div>
-//    `
-//     let btnSecond = document.querySelector(".btn-primary")
-//     console.log(btnSecond)
+    <div class="small-div">
+    <h4>Note:<h4>
+     <p>${myString}</p>
+ <button type="button" class="btn btn-primary">View Full note</button>
+     </div>
+   `
+    let btnSecond = document.querySelector(".btn-primary")
+    console.log(btnSecond)
 
-//     btnSecond.addEventListener("click", moreNote)
-// }
+    btnSecond.addEventListener("click", moreNote)
+}
 
-// function moreNote(event) {
+function moreNote(event) {
 
-// }
+}
 
