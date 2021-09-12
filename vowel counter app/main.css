@@ -2,9 +2,20 @@
     box-sizing: border-box;
 }
 
-.modal {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.wrapp{
+    width: 80%;
+    height: 500px;
+    border: 1px solid black;
+    margin: auto;
+    text-align: center;
+    font-size: 1.25em;
+}
+
+input{
+    width: 80%;
+    height: 50px;
+}
+
+.btn-success{
+    width: 100px;
 }

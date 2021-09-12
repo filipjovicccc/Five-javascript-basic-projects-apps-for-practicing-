@@ -61,7 +61,7 @@ function special() {
     let total = parseFloat(first) + parseFloat(first);
     console.log(total)
 
-}
+  }
 
 }
 
