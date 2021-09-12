@@ -25,18 +25,41 @@ function addArticle(event) {
     section.innerHTML += `
 
     <div class="small-div">
-    <h4>Note:<h4>
-     <p>${myString}</p>
- <button type="button" class="btn btn-primary">View Full note</button>
+    <p>Note:<p>
+    <p>${myString}</p>
+   <button type="button" class="btn btn-primary">View Full note</button>
+  <button onclick="this.parentElement.style.display = 'none';" >&times;</button>
      </div>
+     
    `
-    let btnSecond = document.querySelector(".btn-primary")
-    console.log(btnSecond)
+    let btnSecond = document.querySelectorAll(".btn-primary")
 
-    btnSecond.addEventListener("click", moreNote)
+    btnSecond.forEach(button => {                            //forEch obavezno kad ima vise dugmeta
+        button.addEventListener("click", moreNote)
+    })
+
+    let overlay = document.getElementById("overlay")
+
+
 }
 
 function moreNote(event) {
 
+    let wraps = document.querySelector(".wraps")
+    if (wraps == null) return
+    wraps.classList.add("active")
+    overlay.classList.add("active")
+
+    let btnThree = document.querySelector('.close-button');
+    console.log(btnThree)
+    btnThree.addEventListener("click", closeNote)
 }
 
+function closeNote(event) {
+
+    let wraps = document.querySelector(".wraps")
+    if (wraps == null) return
+    wraps.classList.remove("active")
+    overlay.classList.remove("active")
+
+}
